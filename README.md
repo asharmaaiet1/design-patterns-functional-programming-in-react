@@ -24,9 +24,10 @@ Props are immutable and read-only within a component. State updates also follow 
 
 - ### First-Class and Higher-Order Functions:
   Functions are treated as values that can be passed as arguments, returned from other functions, and assigned to variables.
-- ### &nbsp; &nbsp;In React:
 
-  This enables powerful patterns like passing event handlers as props and using Higher-Order Components (HOCs) or custom Hooks for shared logic.
+### &nbsp; &nbsp; - In React:
+
+This enables powerful patterns like passing event handlers as props and using Higher-Order Components (HOCs) or custom Hooks for shared logic.
 
 - ### Declarative Style:
   You describe what the UI should look like for a given state, and React handles how to update the DOM efficiently to match that description, in contrast to imperative programming which focuses on step-by-step instructions for DOM manipulation.
