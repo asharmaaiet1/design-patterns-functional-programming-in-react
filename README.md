@@ -6,15 +6,17 @@ React is heavily influenced by and primarily leverages the principles of functio
 
 - ### Pure Functions:
   A core FP concept where a function, given the same input (props and state), always returns the same output (JSX) without any side effects.
-- ### &nbsp; &nbsp;In React:
 
-  Functional components are essentially pure functions. They take props as arguments and return React elements. This makes the components predictable and easy to test.
+### &nbsp; &nbsp; - In React:
+
+Functional components are essentially pure functions. They take props as arguments and return React elements. This makes the components predictable and easy to test.
 
 - ### Immutability:
   Data should not be changed after it is created. Instead, a new data structure is created with the necessary modifications.
-- ### &nbsp; &nbsp;In React:
 
-  Props are immutable and read-only within a component. State updates also follow this principle; for example, when updating an array or object in state, you create a new one using methods like the spread operator (...) rather than modifying the original directly.
+### &nbsp; &nbsp; - In React:
+
+Props are immutable and read-only within a component. State updates also follow this principle; for example, when updating an array or object in state, you create a new one using methods like the spread operator (...) rather than modifying the original directly.
 
 - ### Composition:
 
