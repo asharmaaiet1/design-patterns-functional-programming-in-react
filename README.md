@@ -31,3 +31,11 @@ This enables powerful patterns like passing event handlers as props and using Hi
 
 - ### Declarative Style:
   You describe what the UI should look like for a given state, and React handles how to update the DOM efficiently to match that description, in contrast to imperative programming which focuses on step-by-step instructions for DOM manipulation.
+
+## This repo mainly contains
+
+### Recursive Components
+
+### Partial Components
+
+### Compositions
