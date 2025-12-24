@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Design Patterns: Functional Programming in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React is heavily influenced by and primarily leverages the principles of functional programming (FP), especially with the use of functional components and Hooks. It encourages building user interfaces by composing pure functions and managing data with immutability.
 
-## Available Scripts
+## Core Functional Programming Concepts in React
 
-In the project directory, you can run:
+- ### Pure Functions:
+  A core FP concept where a function, given the same input (props and state), always returns the same output (JSX) without any side effects.
+- ### &nbsp; &nbsp;In React:
 
-### `npm start`
+  Functional components are essentially pure functions. They take props as arguments and return React elements. This makes the components predictable and easy to test.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ### Immutability:
+  Data should not be changed after it is created. Instead, a new data structure is created with the necessary modifications.
+- ### &nbsp; &nbsp;In React:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Props are immutable and read-only within a component. State updates also follow this principle; for example, when updating an array or object in state, you create a new one using methods like the spread operator (...) rather than modifying the original directly.
 
-### `npm test`
+- ### Composition:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  Complex UIs are built by combining many simple, small, and reusable components. This is a core pattern in React, often preferred over class inheritance.
 
-### `npm run build`
+- ### First-Class and Higher-Order Functions:
+  Functions are treated as values that can be passed as arguments, returned from other functions, and assigned to variables.
+- ### &nbsp; &nbsp;In React:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  This enables powerful patterns like passing event handlers as props and using Higher-Order Components (HOCs) or custom Hooks for shared logic.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ### Declarative Style:
+  You describe what the UI should look like for a given state, and React handles how to update the DOM efficiently to match that description, in contrast to imperative programming which focuses on step-by-step instructions for DOM manipulation.
